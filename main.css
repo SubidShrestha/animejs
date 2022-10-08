@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #d3d3d3;
+}
+
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+}
+
+main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+main .flex-container{
+    justify-content: center;
+    width: 100%;
+    max-width: 760px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    margin-top: 15px;
+}
+
+main .flex-container .anime-item{
+    padding: 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #CCC;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main .flex-container .anime-item:hover{
+    background-color: #ccc;
+}
+.pagenumbers{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagenumbers button{
+    width: 50px;
+    height: 50px;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    background-color: #44AAEE;
+    margin: 5px;
+    transition: 0.4s;
+
+    color: #FFF;
+    font-size: 20px;
+}
+
+.pagenumbers button:hover{
+    background-color: #4ea;
+}
+
+.pagenumbers button.active{
+    background-color: #4ea;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
